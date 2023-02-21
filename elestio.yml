@@ -55,7 +55,7 @@ environments:
   - key: "HOST_MACHINE_MYSQL_PORT"
     value: "3306"
   - key: "HOST_MACHINE_PMA_PORT"
-    value: "8000"
+    value: "8006"
   - key: "HOST_MACHINE_PMA_SECURE_PORT"
     value: "8543"
   - key: "HOST_MACHINE_REDIS_PORT"
