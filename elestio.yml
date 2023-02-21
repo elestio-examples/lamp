@@ -1,8 +1,17 @@
 ports:
   - protocol: "HTTPS"
-    targetProtocol: "HTTP"
+    targetProtocol: "HTTPS"
     listeningPort: "443"
-    targetPort: "8999"
+    targetPort: "9443"
+    public: true
+    path: "/"
+    isAuth: false
+    login: ""
+    password: ""
+  - protocol: "HTTPS"
+    targetProtocol: "HTTP"
+    listeningPort: "8006"
+    targetPort: "8000"
     public: true
     path: "/"
     isAuth: false
