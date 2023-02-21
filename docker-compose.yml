@@ -62,7 +62,7 @@ services:
       MEMORY_LIMIT: ${MEMORY_LIMIT}
     ports:
       - "172.17.0.1:8000:80"
-      - "172.17.0.1:8443:443"
+      - "172.17.0.1:8543:443"
     volumes:
       - /sessions
       - ${PHP_INI-./config/php/php.ini}:/usr/local/etc/php/conf.d/php-phpmyadmin.ini

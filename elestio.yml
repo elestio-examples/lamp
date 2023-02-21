@@ -48,7 +48,7 @@ environments:
   - key: "HOST_MACHINE_PMA_PORT"
     value: 8000"
   - key: "HOST_MACHINE_PMA_SECURE_PORT"
-    value: 8443"
+    value: 8543"
   - key: "HOST_MACHINE_REDIS_PORT"
     value: 6379"
   - key: "MYSQL_ROOT_PASSWORD"
