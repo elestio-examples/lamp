@@ -1,8 +1,8 @@
 ports:
   - protocol: "HTTPS"
-    targetProtocol: "HTTPS"
+    targetProtocol: "HTTP"
     listeningPort: "443"
-    targetPort: "9443"
+    targetPort: "8999"
     public: true
     path: "/"
     isAuth: false
