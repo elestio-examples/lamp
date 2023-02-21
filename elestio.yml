@@ -14,9 +14,9 @@ ports:
     targetPort: "8000"
     public: true
     path: "/"
-    isAuth: false
-    login: ""
-    password: ""
+    isAuth: true
+    login: "root"
+    password: "random_password"
 environments:
   - key: "PHPVERSION"
     value: "php8"
@@ -70,6 +70,8 @@ environments:
     value: "docker"
   - key: "PIPELINE_NAME"
     value: "[PIPELINE_NAME]"
+  - key: "ADMIN_PASSWORD"
+    value: "random_password"
 config:
   runTime: "dockerCompose"
   version: ""
@@ -78,7 +80,7 @@ config:
   buildDir: "./"
   runCommand: "docker-compose up -d"
   icon: ""
-  screenshot: ""
+  screenshot: "lamp.png"
 
 lifeCycleConfig:
   preInstallCommand: "./scripts/preInstall.sh"
@@ -91,3 +93,7 @@ lifeCycleConfig:
 webUI:
   - url: "https://[CI_CD_DOMAIN]"
     label: "Website"
+  - url: "https://[CI_CD_DOMAIN]:8006"
+    label: "phpMyAdmin"
+    login: "root"
+    password: "[ADMIN_PASSWORD]"
